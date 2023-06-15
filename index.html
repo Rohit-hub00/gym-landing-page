@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/gym.png" type="image/icon type">
+
+  <title>Rohit's Fitness</title>
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="left">
+      <img src="img/gym.png" alt="Logo">
+      <div>RC Fitness</div>
+    </div>
+
+    <div class="mid">
+      <ul class="navbar">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#services">Blogs</a></li>
+        <li><a href="#fitness">Fitness Calculator</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="right">
+      <span>Want to Join?</span>
+      <button class="btn">Call Us Now</button>
+      <!-- <button class="btn">Email Us</button> -->
+    </div>
+  </header>
+
+  <section class="homepage" id="home">
+    <div class="container">
+      <h1>RC Fitness</h1>
+      <h3>Join the Best gym in Mumbai</h3>
+    </div>
+  </section>
+
+
+
+  <section class="services" id="services">
+    <h2>Blogs</h2>
+    <ul class="cards">
+      <li class="card">
+        <img src="img/rohit.png" alt="img">
+        <h3>Rohit Chaudhari</h3>
+        <p>Highly recommended for anyone seeking a top-quality gym experience with exceptional value for money.</p>
+      </li>
+      <li class="card">
+        <img src="img/rohit.png" alt="img">
+        <h3>Akash Khatkale</h3>
+        <p>Their trainers are exceptional, the overall vibe is great and I have had nothing but good experiences.</p>
+      </li>
+      <li class="card">
+        <img src="img/rohit.png" alt="img">
+        <h3>Ashwin Nair</h3>
+        <p>Conveniently located, affordable membership options, and knowledgeable trainers who provide excellent
+          guidance.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="fitness">
+    <h2>BMI Calculator</h2>
+    <div>
+      <label for="height">Height (cm) :</label>
+      <input type="number" id="height" placeholder="Enter your height">
+    </div>
+
+    <div>
+      <label for="weight">Weight (kg) :</label>
+      <input type="number" id="weight" placeholder="Enter your weight">
+    </div>
+
+
+    <button id="calculateButton">Calculate</button>
+
+    <p class="txt">Your BMI is: <span id="bmiResult"></span></p>
+
+    <ul class="rules">
+      <li>If your BMI is less than 18.5, it falls within the underweight range.</li>
+      <li>If your BMI is 18.5 to 25, it falls within the healthy weight range.</li>
+      <li>If your BMI is 25.0 to 30, it falls within the overweight range.</li>
+      <li>If your BMI is 30.0 or higher, it falls within the obesity range.</li>
+      <br>Obesity is frequently subdivided into categories:
+      <ul class="rules">
+        <li>Class 1: BMI of 30 to 35</li>
+        <li>Class 2: BMI of 35 to 40</li>
+        <li>Class 3: BMI of 40 or higher. Class 3 obesity is sometimes categorized as “severe” obesity.</li>
+      </ul>
+    </ul>
+    <script src="script.js"></script>
+  </section>
+  <section id="about">
+    <section class="about">
+      <h2>Welcome to Our Gym</h2>
+      <p>At Our Gym, we are committed to helping you achieve your fitness goals and lead a healthy lifestyle. With
+        state-of-the-art facilities, a team of experienced trainers, and a supportive community, we provide the ideal
+        environment for your fitness journey.</p>
+    </section>
+
+    <section class="about">
+      <h2>Our Mission</h2>
+      <p>Our mission is to inspire and empower individuals to prioritize their health and well-being. We strive to
+        create a motivating and inclusive space where everyone feels welcome and encouraged to push their limits,
+        achieve their personal best, and transform their lives.</p>
+    </section>
+
+    <section class="about">
+      <h2>Our Facilities</h2>
+      <p>Our gym is equipped with the latest fitness equipment, offering a wide range of options for cardio, strength
+        training, and functional exercises. We also provide dedicated spaces for group fitness classes, personal
+        training sessions, and relaxation areas to unwind after a workout.</p>
+    </section>
+
+    <section class="about">
+      <h2>Join Our Community</h2>
+      <p>When you join Our Gym, you become part of a supportive community of individuals who share your passion for
+        health and fitness. Our friendly staff and fellow members will be there to motivate you, provide guidance, and
+        celebrate your milestones along the way.</p>
+    </section>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Reach out to us for any inquiries or feedback.</p>
+    <div class="row">
+      <div class="col information">
+        <div class="contact-details">
+          <p><i class="fas fa-map-marker-alt"></i> 187, Koperkhairane, Navi Mumbai</p>
+          <p><i class="fas fa-envelope"></i> rc@fitness.com</p>
+          <p><i class="fas fa-phone"></i> (+91) 7234567890</p>
+          <p><i class="fas fa-clock"></i> Morning: 5:00 AM - 12:00 PM</p>
+          <p><i class="fas fa-clock"></i> Evening: 3:00 PM - 11:00 PM</p>
+          <p><i class="fas fa-clock"></i> Sunday(Morning): 5:00 AM - 12:00 PM</p>
+          <p><i class="fas fa-clock"></i> Sunday(Evening): 3:00 PM - 9:00 PM</p>
+        </div>          
+      </div>
+      <div class="col form">
+        <form>
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Email" required>
+          <textarea placeholder="Message" required></textarea>
+          <button id="submit" type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
